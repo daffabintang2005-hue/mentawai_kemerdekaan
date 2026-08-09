@@ -197,15 +197,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  /* ---------- VIDEO MODAL ---------- */
+/* ---------- VIDEO MODAL ---------- */
   const videoModal = document.getElementById('video-modal');
   const videoBox = videoModal.querySelector('.video-box');
   const videoClose = videoModal.querySelector('.video-close');
-  document.querySelectorAll('.video-frame, .play-btn').forEach(trigger => {
-    trigger.addEventListener('click', () => {
+  document.querySelectorAll('.video-frame, .play-btn, [data-video]').forEach(trigger => {
+    trigger.addEventListener('click', (e) => {
+      e.preventDefault();
       const frame = trigger.closest('.video-frame');
-      const src = frame.dataset.video;
-      videoBox.innerHTML = `<iframe src="${src}?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+      const src = (frame && frame.dataset.video) || trigger.dataset.video;
+      if(!src) return;
+      videoBox.innerHTML = `<iframe src="${src}?autoplay=1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>`;
       videoModal.classList.add('open');
     });
   });
