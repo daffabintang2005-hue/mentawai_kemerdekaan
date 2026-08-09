@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wisata — Siberut Selatan</title>
+<meta name="description" content="Portal wisata, budaya, dan alam Siberut Selatan, Kepulauan Mentawai — rumah suku Mentawai, hutan hujan purba, dan ombak kelas dunia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="page-enter">
+
+<div id="progress-bar"></div>
+
+<!-- ============ NAV ============ -->
+<header id="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">SS</span>
+      <span class="brand-text">Siberut <em>Selatan</em></span>
+    </a>
+    <nav class="nav-links">
+      <a href="destinasi.html" data-nav>Wisata</a>
+      <a href="budaya.html" data-nav>Budaya</a>
+      <a href="sejarah.html" data-nav>Sejarah</a>
+      <a href="biodata.html" data-nav>Biodata</a>
+    </nav>
+    <a href="index.html" class="back-btn" aria-label="Kembali ke Beranda"><i class="fa-solid fa-arrow-left"></i> Beranda</a>
+    <a href="index.html" class="nav-logo" aria-label="Logo Daffa Bintang Salimu">
+      <img src="logo1.png" alt="Logo Daffa Bintang Salimu">
+    </a>
+    <button id="burger" aria-label="Buka menu"><span></span><span></span><span></span></button>
+  </div>
+  <div id="mobile-menu">
+    <a href="destinasi.html">Wisata</a>
+    <a href="budaya.html">Budaya</a>
+    <a href="sejarah.html">Sejarah</a>
+    <a href="biodata.html">Biodata</a>
+  </div>
+</header>
+
+<main>
+  <!-- ============ HALAMAN INTRO ============ -->
+  <section class="section page-hero">
+    <div class="container">
+      <div class="section-head text-center reveal">
+        <span class="eyebrow">Destinasi</span>
+        <h2 class="section-title">Pesona wisata pilihan Siberut Selatan</h2>
+        <p class="lead" style="margin-inline:auto;text-align:center;">Dari reef break kelas dunia, jalur trekking di bawah kanopi rimba, hingga air terjun tersembunyi — inilah titik-titik yang layak masuk daftar perjalananmu.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DESTINASI (CAROUSEL) ============ -->
+  <section class="section section-alt" id="destinasi">
+    <div class="container">
+      <div class="section-head split reveal">
+        <div>
+          <span class="eyebrow">Pilihan</span>
+          <h2 class="section-title">Geser untuk jelajah</h2>
+        </div>
+        <div class="carousel-nav">
+          <button id="dest-prev" aria-label="Sebelumnya"><i class="fa-solid fa-arrow-left"></i></button>
+          <button id="dest-next" aria-label="Berikutnya"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-viewport reveal" id="dest-viewport">
+      <div class="carousel-track" id="dest-track">
+        <article class="dest-card">
+          <img src="https://picsum.photos/seed/pantai-katiet/700/560" alt="Pantai Katiet, Siberut Selatan" loading="lazy">
+          <span class="dest-tag">Pantai &amp; Selancar</span>
+          <h3>Pantai Katiet</h3>
+          <p>Pasir putih landai dengan reef break legendaris, favorit peselancar internasional saat musim ombak tiba.</p>
+        </article>
+        <article class="dest-card">
+          <img src="https://picsum.photos/seed/rimba-peleonan/700/560" alt="Rimba Peleonan, Siberut Selatan" loading="lazy">
+          <span class="dest-tag">Trekking Hutan</span>
+          <h3>Rimba Peleonan</h3>
+          <p>Jalur trekking di bawah kanopi rapat, tempat terbaik menjumpai Bilou dan Joja, primata endemik Mentawai.</p>
+        </article>
+        <article class="dest-card">
+          <img src="https://picsum.photos/seed/air-terjun-marobe/700/560" alt="Air Terjun Marobe, Siberut Selatan" loading="lazy">
+          <span class="dest-tag">Air Terjun</span>
+          <h3>Air Terjun Marobe</h3>
+          <p>Kolam alami berundak di tengah hutan, satu jam trekking dari desa terdekat — sunyi dan menyegarkan.</p>
+        </article>
+        <article class="dest-card">
+          <img src="https://picsum.photos/seed/muara-siberut-sungai/700/560" alt="Susur sungai Siberut Selatan" loading="lazy">
+          <span class="dest-tag">Susur Sungai</span>
+          <h3>Sungai Muara Siberut</h3>
+          <p>Perjalanan perahu menyusuri sungai menuju perkampungan pedalaman, jalur utama kehidupan warga Mentawai.</p>
+        </article>
+        <article class="dest-card">
+          <img src="https://picsum.photos/seed/terumbu-siberut/700/560" alt="Terumbu karang Siberut Selatan" loading="lazy">
+          <span class="dest-tag">Bawah Laut</span>
+          <h3>Gosong Karang Simakakang</h3>
+          <p>Spot snorkeling dangkal dengan visibilitas tinggi, cocok untuk pemula yang ingin melihat biota laut Mentawai.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="brand-text light"><span class="brand-mark">S</span>Siberut<em>Selatan</em></span>
+      <p>Portal resmi wisata, budaya, dan alam Siberut Selatan, Kabupaten Kepulauan Mentawai.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/urr_daffaa?igsh=NXd5bzN2ZGFvcXl0&utm_source=qr" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/6282381038176" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.youtube.com/@daffabintang652" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Jelajahi</h5>
+      <a href="destinasi.html">Wisata</a>
+      <a href="budaya.html">Budaya</a>
+      <a href="sejarah.html">Sejarah</a>
+      <a href="biodata.html">Biodata</a>
+    </div>
+    <div class="footer-col">
+      <h5>Kontak</h5>
+      <a href="https://wa.me/6281200000000">+62 823 8103 8176</a>
+      <a href="mailto:daffabintang2005@gmail.com">daffabintang2005@gmail.com</a>
+      <span>Muara Siberut, Kep. Mentawai, Sumbar</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Daffa Bintang Salimu</span>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Kembali ke atas"><i class="fa-solid fa-arrow-up"></i></button>
+
+<div id="video-modal">
+  <button class="video-close" aria-label="Tutup video"><i class="fa-solid fa-xmark"></i></button>
+  <div class="video-box"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

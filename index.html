@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Siberut Selatan — Jantung Rimba & Ombak Mentawai</title>
+<meta name="description" content="Portal wisata, budaya, dan alam Siberut Selatan, Kepulauan Mentawai — rumah suku Mentawai, hutan hujan purba, dan ombak kelas dunia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="no-scroll">
+  
+<div id="loader" aria-label="Memuat">
+  <div class="curtain curtain-left" style="background-image:url('bcg2.jpeg')"></div>
+  <div class="curtain curtain-right" style="background-image:url('bcg3.jpeg')"></div>
+  <div class="curtain-fringe">
+  </div>
+  <div class="loader-content">
+    <h1 class="loader-title">Selamat <em>Datang</em></h1>
+    <div class="loader-progress"><span id="loader-progress-bar"></span></div>
+    <span class="loader-percent" id="loader-percent">0%</span>
+  </div>
+</div>
+
+<div id="progress-bar"></div>
+
+<!-- ============ NAV ============ -->
+<header id="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">SS</span>
+      <span class="brand-text">Siberut <em>Selatan</em></span>
+    </a>
+    <nav class="nav-links">
+      <a href="destinasi.html" data-nav>Wisata</a>
+      <a href="budaya.html" data-nav>Budaya</a>
+      <a href="sejarah.html" data-nav>Sejarah</a>
+      <a href="biodata.html" data-nav>Biodata</a>
+    </nav>
+    <a href="index.html" class="nav-logo" aria-label="Logo Daffa Bintang Salimu">
+      <img src="logo1.png" alt="Logo Daffa Bintang Salimu">
+    </a>
+    <button id="burger" aria-label="Buka menu"><span></span><span></span><span></span></button>
+  </div>
+  <div id="mobile-menu">
+    <a href="destinasi.html">Wisata</a>
+    <a href="budaya.html">Budaya</a>
+    <a href="sejarah.html">Sejarah</a>
+    <a href="biodata.html">Biodata</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="hero-slides" id="hero-slides"></div>
+    <div class="hero-scrim"></div>
+
+    <div class="hero-content">
+      <span class="eyebrow eyebrow-light"><i class="fa-solid fa-location-dot"></i> Kepulauan Mentawai · Sumatera Barat</span>
+      <h1>Siberut Selatan<br><em>Rimba &amp; Ombak</em> yang Masih Bernapas</h1>
+      <p class="hero-sub" data-typing='["Rumah suku Mentawai yang menjaga hutan hujan tertua di Sumatera.","Ombak kelas dunia yang memanggil peselancar lintas benua.","Tato Titi dan Uma — warisan yang masih hidup, bukan sekadar cerita."]'></p>
+      <div class="hero-btns">
+        <a href="destinasi.html" class="btn btn-primary">Jelajahi Destinasi <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#cerita" class="btn btn-ghost"><i class="fa-solid fa-play"></i> Tonton Cerita</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INTRO + COUNTER ============ -->
+  <section class="section intro-section">
+    <div class="container intro-grid">
+      <div class="reveal">
+        <span class="eyebrow">Tentang Siberut Selatan</span>
+        <h2 class="section-title">Salah satu tempat terakhir<br>di mana rimba menulis aturannya sendiri</h2>
+        <p class="lead">Di bagian selatan Pulau Siberut, hutan hujan tropis berusia jutaan tahun bertemu dengan laut Samudra Hindia. Di sinilah suku Mentawai masih menenun kehidupan dari hutan, ladang sagu, dan ombak — menjaga tradisi yang oleh dunia luar disebut salah satu yang tertua yang tersisa.</p>
+      </div>
+      <div class="counter-grid reveal" data-delay="120">
+        <div class="counter-item">
+          <div class="counter-num"><span data-counter="4500">0</span><span class="suffix">+</span></div>
+          <span class="counter-label">km² wilayah hutan &amp; pesisir</span>
+        </div>
+        <div class="counter-item">
+          <div class="counter-num"><span data-counter="12">0</span></div>
+          <span class="counter-label">desa adat di sepanjang pesisir</span>
+        </div>
+        <div class="counter-item">
+          <div class="counter-num"><span data-counter="18">0</span><span class="suffix">rb+</span></div>
+          <span class="counter-label">penduduk asli &amp; pendatang</span>
+        </div>
+        <div class="counter-item">
+          <div class="counter-num"><span data-counter="25">0</span><span class="suffix">+</span></div>
+          <span class="counter-label">titik selancar &amp; wisata alam</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="titi-divider" aria-hidden="true">
+    <svg viewBox="0 0 1000 40" preserveAspectRatio="none"><path d="M0 20 L30 5 L60 35 L90 5 L120 35 L150 5 L180 35 L210 5 L240 35 L270 5 L300 35 L330 5 L360 35 L390 5 L420 35 L450 5 L480 35 L510 5 L540 35 L570 5 L600 35 L630 5 L660 35 L690 5 L720 35 L750 5 L780 35 L810 5 L840 35 L870 5 L900 35 L930 5 L960 35 L1000 20" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+  </div>
+
+  <!-- ============ EMPAT WAJAH ============ -->
+  <section class="section" id="keunggulan">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Mengapa Kemari</span>
+        <h2 class="section-title">Empat wajah Siberut Selatan</h2>
+      </div>
+      <div class="face-grid">
+        <article class="face-card reveal">
+          <div class="face-icon"><i class="fa-solid fa-water"></i></div>
+          <h3>Ombak Kelas Dunia</h3>
+          <p>Barisan reef break yang konsisten menarik peselancar dari seluruh penjuru dunia, dari pemula hingga profesional.</p>
+        </article>
+        <article class="face-card reveal" data-delay="80">
+          <div class="face-icon"><i class="fa-solid fa-tree"></i></div>
+          <h3>Hutan Hujan Purba</h3>
+          <p>Salah satu ekosistem hutan tropis tertua yang masih tersisa di Sumatera, rumah bagi primata endemik yang tak ditemukan di tempat lain.</p>
+        </article>
+        <article class="face-card reveal" data-delay="160">
+          <div class="face-icon"><i class="fa-solid fa-feather"></i></div>
+          <h3>Budaya yang Hidup</h3>
+          <p>Tato Titi, rumah Uma, dan tradisi sikerei bukan artefak museum — tapi kehidupan sehari-hari yang masih berjalan.</p>
+        </article>
+        <article class="face-card reveal" data-delay="240">
+          <div class="face-icon"><i class="fa-solid fa-fish"></i></div>
+          <h3>Biota Laut Melimpah</h3>
+          <p>Terumbu karang yang relatif terjaga menjadikan perairan Siberut Selatan surga snorkeling dan diving tersembunyi.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CERITA / VIDEO ============ -->
+  <section class="section section-alt" id="cerita">
+    <div class="container">
+      <div class="section-head text-center reveal">
+        <span class="eyebrow">Cerita Bergerak</span>
+        <h2 class="section-title">Siberut Selatan dalam frame</h2>
+      </div>
+      <div class="video-frame reveal" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+        <img src="https://picsum.photos/seed/siberut-video-cover/1400/760" alt="Cuplikan Siberut Selatan" loading="lazy">
+        <button class="play-btn" aria-label="Putar video"><i class="fa-solid fa-play"></i></button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="brand-text light"><span class="brand-mark">S</span>Siberut<em>Selatan</em></span>
+      <p>Portal resmi wisata, budaya, dan alam Siberut Selatan, Kabupaten Kepulauan Mentawai.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/urr_daffaa?igsh=NXd5bzN2ZGFvcXl0&utm_source=qr" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/6282381038176" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.youtube.com/@daffabintang652" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Jelajahi</h5>
+      <a href="destinasi.html">Wisata</a>
+      <a href="budaya.html">Budaya</a>
+      <a href="sejarah.html">Sejarah</a>
+      <a href="biodata.html">Biodata</a>
+    </div>
+    <div class="footer-col">
+      <h5>Kontak</h5>
+      <a href="https://wa.me/6281200000000">+62 823 8103 8176</a>
+      <a href="mailto:daffabintang2005@gmail.com">daffabintang2005@gmail.com</a>
+      <span>Muara Siberut, Kep. Mentawai, Sumbar</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Daffa Bintang Salimu</span>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Kembali ke atas"><i class="fa-solid fa-arrow-up"></i></button>
+
+<div id="video-modal">
+  <button class="video-close" aria-label="Tutup video"><i class="fa-solid fa-xmark"></i></button>
+  <div class="video-box"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
