@@ -288,6 +288,10 @@ p{margin:0;line-height:1.7;color:var(--ink-soft);}
 /* ============================================================
    HERO
    ============================================================ */
+/* Halaman non-Beranda: beri ruang di atas agar konten tak tertutup navbar fixed */
+.page-hero{padding-top:150px;}
+#biodata{padding-top:150px;}
+
 .hero{
   position:relative;min-height:100svh;display:flex;flex-direction:column;
   align-items:center;justify-content:center;overflow:hidden;color:var(--white);
@@ -567,11 +571,71 @@ p{margin:0;line-height:1.7;color:var(--ink-soft);}
   .footer-grid{grid-template-columns:1fr;gap:36px;}
 }
 @media (max-width:640px){
-  .section{padding:72px 0;}
+  .container{padding-inline:18px;}
+  .section{padding:64px 0;}
+  .section-head{margin-bottom:40px;}
+
+  /* Navbar ringkas */
+  .nav-inner{padding-inline:16px;gap:10px;}
+  .brand{gap:8px;}
+  .brand-mark{width:30px;height:30px;font-size:.9rem;}
+  .brand-text{font-size:1rem;white-space:nowrap;}
+  .nav-logo{width:38px;height:38px;border-width:1.5px;}
+  /* Tombol Beranda jadi ikon saja (label disembunyikan) saat menyempit */
+  .back-btn{width:40px;height:40px;padding:0;justify-content:center;}
+  .back-btn .back-label{display:none;}
+
   .face-grid,.fact-grid{grid-template-columns:1fr;}
   .hero-btns{flex-direction:column;width:100%;}
-  .hero-btns .btn{justify-content:center;}
-  .counter-grid{grid-template-columns:1fr 1fr;}
-  .dest-card{flex-basis:78vw;}
+  .hero-btns .btn{justify-content:center;width:100%;}
+  .hero-sub{margin-top:18px;min-height:5.2em;}
+  .counter-grid{grid-template-columns:1fr 1fr;gap:22px 20px;}
+  .counter-num{font-size:2.1rem;}
+  .dest-card{flex-basis:80vw;}
   .section-head.split{flex-direction:column;align-items:flex-start;}
+  .carousel-nav{align-self:flex-end;}
+  .carousel-viewport{padding-left:18px;}
+
+  .page-hero{padding-top:130px;}
+  #biodata{padding-top:130px;}
+
+  .loader-title{font-size:2.1rem;}
+  .culture-copy h3{font-size:1.4rem;}
+  .fact-card{padding:22px;}
+  .video-frame{aspect-ratio:16/9;}
+  .timeline-card p{font-size:.82rem;}
+}
+
+@media (max-width:480px){
+  .nav-inner{padding-inline:12px;gap:8px;}
+  .brand-mark{width:27px;height:27px;font-size:.85rem;}
+  .brand-text{font-size:.92rem;}
+  .nav-logo{width:34px;height:34px;}
+  .back-btn{width:36px;height:36px;font-size:.8rem;}
+
+  .section{padding:54px 0;}
+  .page-hero{padding-top:120px;}
+  #biodata{padding-top:120px;}
+
+  .eyebrow{font-size:.7rem;}
+  .hero h1{font-size:clamp(1.9rem,8vw,2.3rem);}
+  .hero-sub{font-size:1rem;}
+  .hero-btns{gap:12px;margin-top:26px;}
+  .scroll-cue{bottom:20px;}
+  .hero-titi{height:90px;bottom:16%;}
+
+  .section-title{font-size:clamp(1.5rem,6.5vw,1.85rem);}
+  .lead{font-size:.98rem;}
+  .counter-num{font-size:1.85rem;}
+  .counter-label{font-size:.8rem;}
+
+  .face-card{padding:26px 20px;}
+  .dest-card{flex-basis:86vw;}
+  .culture-media{aspect-ratio:4/4.6;}
+  .culture-copy h3{font-size:1.3rem;}
+  .video-frame{aspect-ratio:16/10;}
+
+  .carousel-viewport{padding-left:14px;}
+  .bio-photo{width:190px;height:230px;}
+  .brand-text em{display:inline;}
 }
