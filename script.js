@@ -207,10 +207,31 @@ document.addEventListener('DOMContentLoaded', () => {
       const frame = trigger.closest('.video-frame');
       const src = (frame && frame.dataset.video) || trigger.dataset.video;
       if(!src) return;
-      videoBox.innerHTML = `<iframe src="${src}?autoplay=1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>`;
+      // Ubah format URL menjadi embed agar bisa dimuat di iframe
+      const embedUrl = toEmbedUrl(src);
+      const watchUrl = toWatchUrl(src);
+      videoBox.innerHTML = `
+        <iframe src="${embedUrl}" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        <a class="video-fallback" href="${watchUrl}" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Buka di YouTube</a>
+      `;
       videoModal.classList.add('open');
     });
   });
+
+  // Konversi berbagai format URL YouTube menjadi URL embed yang valid.
+  // NOTE: autoplay TIDAK dipaksa di sini karena banyak browser memblokir
+  // autoplay bersuara hingga pengguna berinteraksi — ini yang membuat video
+  // tampak "stuck/loading". Pemain YouTube tetap muncul dan tinggal ditekan play.
+  function toEmbedUrl(url){
+    let id = null;
+    const m = url.match(/(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/)|youtu\.be\/)([\w-]{11})/);
+    if(m) id = m[1];
+    return id ? `https://www.youtube.com/embed/${id}` : url;
+  }
+  function toWatchUrl(url){
+    const m = url.match(/(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/)|youtu\.be\/)([\w-]{11})/);
+    return m ? `https://www.youtube.com/watch?v=${m[1]}` : url;
+  }
   videoClose.addEventListener('click', closeVideo);
   videoModal.addEventListener('click', (e) => { if(e.target === videoModal) closeVideo(); });
   function closeVideo(){
