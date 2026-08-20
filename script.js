@@ -80,9 +80,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---------- HERO SLIDESHOW (gambar lokal dari folder images/) ---------- */
   const HERO_IMAGES = [
-    'bcg1.jpeg',
-    'bcg2.jpeg',
-    'bcg3.jpeg'
+    'paper1.jpeg',
+    'paper2.jpeg',
+    'paper3.jpeg'
   ]; 
 
   const heroSlidesWrap = document.getElementById('hero-slides');
